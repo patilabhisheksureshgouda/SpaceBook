@@ -1,0 +1,137 @@
+.share{
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.shareWrapper{
+    padding: 20px;
+}
+
+.shareTop{
+    display: flex;
+    align-items: center;
+
+}
+.shareprofileimg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.shareinput{
+    border: none;
+    width: 80%;
+
+}
+.shareinput:focus{
+outline: none;
+}
+.sharehr{
+    margin: 20px;
+}
+.shareButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shareoptions{
+    display: flex;
+    margin-left: 20px;
+
+}
+.shareoption{
+    display: flex;
+    align-items: center;
+    margin-right:15px;
+    cursor: pointer;
+}
+.shareicon{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.shareoptiontext{
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.shareButton1{
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: green;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .share {
+        height: auto;
+    }
+    .shareWrapper {
+        padding: 10px;
+    }
+    .shareTop {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shareprofileimg {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .shareinput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .shareButton {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shareoptions {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .shareoption {
+        margin-bottom: 10px;
+    }
+    .shareButton1 {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shareWrapper {
+        padding: 5px;
+    }
+    .shareTop {
+        align-items: center;
+    }
+    .shareinput {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .shareButton {
+        align-items: center;
+    }
+    .shareoptions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shareoption {
+        margin-bottom: 5px;
+    }
+    .shareButton1 {
+        width: 100%;
+        padding: 10px;
+    }
+}

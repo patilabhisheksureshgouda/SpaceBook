@@ -1,0 +1,145 @@
+.topbarConatiner{
+    height: 70px;
+    width: 100%;
+    background-color: #00aeff;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.topBarLeft{
+    flex: 3;
+}
+.logo{
+    font-size: 27px;
+    margin: 20px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+.topBarCenter{
+    flex: 5;
+}
+
+/* .topBarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;   
+    justify-content: space-around;
+    color: white;
+} */
+.topBarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.topBarLink{  
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+  
+}
+/* .topBarLinks{
+    display: flex;
+} */
+.topBarIcons{
+    display: flex;
+    
+}
+.topBarIconItem{
+    margin-right: 16px;
+    cursor: pointer;
+    position: relative;
+}
+.topBarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+}
+.topBarImage{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.searchBar{
+    width: 100%;
+    height: 36px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+.searchInput{
+ border: none;
+ width: 70%;
+}
+.searchInput:focus{
+    outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .topbarConatiner {
+        flex-direction: column;
+        height: auto;
+    }
+    .topBarLeft, .topBarCenter, .topBarRight {
+        flex: 1;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .topBarIcons {
+        justify-content: center;
+    }
+    .searchBar {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .logo {
+        margin: 10px 0;
+    }
+    .topBarLink {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbarConatiner {
+        padding: 10px;
+    }
+    .searchIcon {
+        margin-left: 10px;
+    }
+    .searchInput {
+        width: 60%;
+    }
+    .topBarIcons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topBarIconItem {
+        margin-bottom: 10px;
+    }
+}
+
+
+
